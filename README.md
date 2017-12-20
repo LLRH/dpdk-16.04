@@ -12,7 +12,8 @@ Report bugs and issues to the development mailing list: dev@dpdk.org
 
 ## 原版修改记录
 
-1.  增加了 pktgen-2.9.17
+1.  增加了 pktgen-2.9.17  (需要sudo apt-get install libpcap-dev）
+
 
 2.  增加 .gitignore
 

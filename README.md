@@ -17,12 +17,24 @@ Report bugs and issues to the development mailing list: dev@dpdk.org
 			sudo apt-get install libpcap-dev
 
 2.  增加 .gitignore
+
+			忽略编译生成的文件
+				
 3.  增加 install.sh
 
-			echo "Please [source install.sh]"
-			export RTE_SDK=$PWD
-			export RTE_TARGET=x86_64-native-linuxapp-gcc
-			echo RTE_SDK=$RTE_SDK
-			echo RTE_TARGET=$RTE_TARGET
+			source install.sh
+			
+## 修改大页面内存
+			vim /etc/default/grub
+			在约11行的位置将
+			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" 
+			中加入 
+			default_hugepagesz=1G hugepagesz=1G hugepages=10
+			更改为
+			GRUB_CMDLINE_LINUX_DEFAULT="quiet splash default_hugepagesz=1G hugepagesz=1G hugepages=10"
+			
+			sudo update-grub
+			
+			
 
 

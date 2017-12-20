@@ -10,7 +10,7 @@ API documentation, and sample application information.
 For questions and usage discussions, subscribe to: users@dpdk.org
 Report bugs and issues to the development mailing list: dev@dpdk.org
 
-##  原版修改记录
+## 原版修改记录
 
 1.  增加了 pktgen-2.9.17
 

@@ -11,9 +11,18 @@ For questions and usage discussions, subscribe to: users@dpdk.org
 Report bugs and issues to the development mailing list: dev@dpdk.org
 
 ## 原版修改记录
+1. 增加了 pktgen-2.9.17  
 
-1.  增加了 pktgen-2.9.17  (需要sudo apt-get install libpcap-dev）
-
+			需要安装libpcap-dev
+			sudo apt-get install libpcap-dev
 
 2.  增加 .gitignore
+3.  增加 install.sh
+
+			echo "Please [source install.sh]"
+			export RTE_SDK=$PWD
+			export RTE_TARGET=x86_64-native-linuxapp-gcc
+			echo RTE_SDK=$RTE_SDK
+			echo RTE_TARGET=$RTE_TARGET
+
 
